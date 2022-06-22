@@ -157,7 +157,7 @@ error_reporting(0);
        $show_approve_request_query = "SELECT *
                   FROM doctor WHERE permission='Approved' || permission='Added'
 				 ";
-$n_query=mysqli_query($db,$show_approve_request_query );
+          $n_query=mysqli_query($db,$show_approve_request_query );
                               while($drow = mysqli_fetch_array($n_query))
 				                  {}
 								    $count=mysqli_num_rows($n_query);
@@ -168,7 +168,7 @@ $n_query=mysqli_query($db,$show_approve_request_query );
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid ">
     <div class="navbar-header">
-      <a class="navbar-brand text-dark" href="#myPage"><strong>E-HealthCare</strong></a>
+      <a class="navbar-brand text-dark" href="#myPage"><strong>E_HealthCare</strong></a>
     </div>
 
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -182,7 +182,7 @@ $n_query=mysqli_query($db,$show_approve_request_query );
                   </ul>
           </li>
 
-
+        <li> <a href="appointment.html" >Book appointment</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Doctors
           <span class="caret"></span></a>
@@ -259,7 +259,7 @@ if(isset($error_msg)){echo $error_msg;}
 	   include 'translate.php';?>
 <div id="#" class="bg-1">
   <div class="container">
-    <h3 class="text-center">E-HealthCare</h3>
+    <h3 class="text-center">E_HealthCare</h3>
   <p class="text-center"><em>Virtual healthcare  means online patient care!</em></p>
     <p class="text-center"> Our highly specialized experts are deeply experienced in treating rare and complex conditions . You can get appointment from here . For getting appointment at first you need to login at this site . If you are not registered already, <strong style="color:#0066FF"><a href="Users/registration.php">Register</a></strong> here please . You can still get locations about other nearest hospitals from here.
  </p>
@@ -273,9 +273,9 @@ if(isset($error_msg)){echo $error_msg;}
     <p class="w3-opacity w3-center"><i>If you want to know anythings from us ? Please Drop a note here !</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i>Pune <br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +088......<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: E_HelthCare@gmail.com<br>
+        <i class="fa fa-map-marker" style="width:30px"></i>Pune Maharestra<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: **********<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email:  E_HealthCare@gmail.com<br>
       </div>
       <?php
 	  if(isset($_POST["submit"])){
@@ -332,7 +332,7 @@ if(isset($success_msg)){echo $success_msg;}
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Copyright<a href="http://labaidgroup.com/specialized/doctor" data-toggle="tooltip" title="e-Healthcare">@e-Healthcare</a></p>
+  <p>Copyright<a href="http://labaidgroup.com/specialized/doctor" data-toggle="tooltip" title="e-Healthcare">@E_HealthCare</a></p>
 </footer>
 <script>
 $(document).ready(function(){
